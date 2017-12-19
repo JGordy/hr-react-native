@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     margin: 5,
     padding: 5,
     width: 400,
+    height: 75,
   },
   gameTitle: {
     fontSize: 22,

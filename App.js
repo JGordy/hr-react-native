@@ -6,8 +6,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <GameList style={styles.gameList} />
         <Text>Shake your phone to open the developer menu.</Text>
-        <GameList />
       </View>
     );
   }
@@ -15,9 +15,13 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 50,
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  gameList: {
+    marginTop: 50,
+  }
 });
