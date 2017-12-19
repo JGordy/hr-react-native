@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, ScrollView, Text } from 'react-native'
+import { StyleSheet, ScrollView, Text, View } from 'react-native'
 
 export default class GameList extends Component {
   constructor(props) {
@@ -23,9 +23,14 @@ export default class GameList extends Component {
     console.log("Games: ", this.state.games);
     let gameList = this.state.games.map((game) => {
       return (
-        <Text
-        keyExtractor={game => game.id}
-        >{game.title}</Text>
+        <View key={game.id} style={styles.gameItem}>
+          <Text style={styles.gameTitle}>
+            {game.title}
+          </Text>
+          <Text style={styles.gameInfo}>
+            {game.alternates.length} ways to play!
+          </Text>
+        </View>
       )
     })
 
@@ -39,6 +44,21 @@ export default class GameList extends Component {
 
 const styles = StyleSheet.create({
   gameItem: {
-
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    borderRadius: 4,
+    borderWidth: 0.5,
+    borderColor: '#d6d7da',
+    margin: 5,
+    padding: 5,
+    width: 400,
+  },
+  gameTitle: {
+    fontSize: 22,
+    color: 'gray',
+  },
+  gameInfo: {
+    color: 'darkgray',
   }
 })
