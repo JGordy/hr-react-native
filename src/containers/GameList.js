@@ -44,20 +44,20 @@ export default class GameList extends Component {
 
 const styles = StyleSheet.create({
   gameItem: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    borderColor: '#d6d7da',
     borderRadius: 4,
     borderWidth: 0.5,
-    borderColor: '#d6d7da',
+    flex: 1,
+    flexDirection: 'row',
+    height: 75,
+    justifyContent: 'space-between',
     margin: 5,
     padding: 5,
     width: 400,
-    height: 75,
   },
   gameTitle: {
-    fontSize: 22,
     color: 'gray',
+    fontSize: 22,
   },
   gameInfo: {
     color: 'darkgray',

@@ -19,9 +19,10 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "auth0-js": "^9.1.0",
     "expo": "^23.0.4",
     "react": "16.0.0",
     "react-native": "0.50.3",
-    "react-navigation": "^1.0.0-beta.22"
+    "react-navigation": "^1.0.0-beta.26"
   }
 }

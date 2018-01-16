@@ -15,11 +15,11 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 50,
-    flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
+    backgroundColor: '#fff',
+    flex: 1,
     justifyContent: 'center',
+    marginTop: 50,
   },
   gameList: {
     marginTop: 50,
